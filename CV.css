@@ -1,5 +1,6 @@
 :root {
     --olive: #739b70;
+    --seaBlue: #2596be;
 } 
 
 @font-face {
@@ -13,17 +14,26 @@ body {
         background-position: center;
         background-size: 200%;
         font-family: Raleway; 
-        line-height: 2em; 
+        line-height: 2em;
+        animation-name: backgroundAnimation;
+        animation-duration: 4s; 
+        animation-fill-mode: forwards;
     }
 
 h1 {
         text-align: center;
         font-size: 70px;
         color: var(--olive);
+        animation-name: textAnimation;
+        animation-duration: 4s; 
+        animation-fill-mode: forwards;
         }
         
 h3 {
         color: var(--olive);
+        animation-name: textAnimation;
+        animation-duration: 4s; 
+        animation-fill-mode: forwards;
         }
 
 a{
@@ -83,6 +93,42 @@ li{
     padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 768px){
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+        'navi navi navi navi navi navi'
+        'left left left left left left'
+        'right right right right right right';
+    }
 
+    .right{
+        text-align: center;
+        font-size: 12px;
+    }
 
+    .navi{
+        font-size: 10px ;
+        text-align: left;
+    }
 
+    .Ofir{
+        font-size: 50px;
+    }
+
+    .left{
+        font-size: 12px;
+    }
+}
+
+@keyframes backgroundAnimation {
+    from {background-image: url("background.jpg");}
+    to {background-image: url("IMG_9556.jpg");}
+}
+
+@keyframes textAnimation {
+    from {color: var(--olive);}
+    to {color: var(--seaBlue);}
+}
+
+    
