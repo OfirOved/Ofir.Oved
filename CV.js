@@ -1,4 +1,5 @@
 function load() {
-    document.title = "Hello Dolly!";
+    document.title = "Ofir Oved CV fully loaded";
     }
+
     
