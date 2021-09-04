@@ -5,11 +5,11 @@
 
 @font-face {
         font-family: Raleway;
-        src: url(Raleway-VariableFont_wght.ttf);
+        src: url("../fonts/Raleway-VariableFont_wght.ttf");
         }
     
 body {
-        background-image: url("background.jpg");
+        background-image: url("../images/background.jpg");
         background-repeat: repeat-y;
         background-position: center;
         background-size: 200%;
@@ -122,8 +122,8 @@ li{
 }
 
 @keyframes backgroundAnimation {
-    from {background-image: url("background.jpg");}
-    to {background-image: url("IMG_9556.jpg");}
+    from {background-image: url("../images/background.jpg");}
+    to {background-image: url("../images/IMG_9556.jpg");}
 }
 
 @keyframes textAnimation {
